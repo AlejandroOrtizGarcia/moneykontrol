@@ -9,9 +9,15 @@ import java.util.Date;
 public class Historico {
 
     private double cantidad;
-    private Categoria categoria;
+    private String categoria;
     private Date timestamp;
 
+    public Historico(){}
+    public Historico(double cantidad, String categoria, Date timestamp){
+        this.cantidad = cantidad;
+        this.categoria = categoria;
+        this.timestamp = timestamp;
+    }
     public double getCantidad() {
         return cantidad;
     }
@@ -20,11 +26,11 @@ public class Historico {
         this.cantidad = cantidad;
     }
 
-    public Categoria getCategoria() {
+    public String getCategoria() {
         return categoria;
     }
 
-    public void setCategoria(Categoria categoria) {
+    public void setCategoria(String categoria) {
         this.categoria = categoria;
     }
 
